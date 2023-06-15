@@ -75,3 +75,14 @@ def siftDown(array, start, end):
             yield array, root, swap, -1, -1
             array[root], array[swap] = array[swap], array[root]
             root = swap
+
+
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    heapSort(array, array[0], array[-1])
+    print(f"The sorted array: {array}")
