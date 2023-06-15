@@ -2,3 +2,11 @@
 - Sorting
 - Searching
 - Data Structures
+
+# Sorting Algorithms Added:
+1. [Bubble Sort](sorting_algorithms/bubbleSort.py)
+2. [BucketSort](sorting_algorithms/bucketSort.py)
+3. [Heap Sort](sorting_algorithms/heapSort.py)
+4. [Insertion Sort](sorting_algorithms/insertionSort.py)
+5. [Merge Sort](sorting_algorithms/mergeSort.py)
+6. [Quick Sort](sorting_algorithms/quickSort.py)
