@@ -10,3 +10,5 @@
 4. [Insertion Sort](sorting_algorithms/insertionSort.py)
 5. [Merge Sort](sorting_algorithms/mergeSort.py)
 6. [Quick Sort](sorting_algorithms/quickSort.py)
+7. [Exchange Sort](sorting_algorithms/exchangeSort.py)
+8. [Bogo Sort](sorting_algorithms/bogoSort.py)
