@@ -21,3 +21,14 @@ def exchangeSort(array, *args):
             yield array, i, j, -1, -1
             if array[i] > array[j]:
                 array[j], array[i] = array[i], array[j]
+
+
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    exchangeSort(array, array[0], array[-1])
+    print(f"The sorted array: {array}")
