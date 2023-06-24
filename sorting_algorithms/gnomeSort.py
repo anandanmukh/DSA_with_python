@@ -22,3 +22,14 @@ def gnomeSort(a, *args):
             yield a, i, i-1, -1, -1
             a[i-1],a[i] = a[i],a[i-1]
             i -= 1
+
+
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    gnomeSort(array, array[0], array[-1])
+    print(f"The sorted array: {array}")
