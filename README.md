@@ -5,6 +5,7 @@
 
 # Sorting Algorithms Added:
 - [Binary Insertion Sort](sorting_algorithms/binaryInsertionSort.py)
+- [Bitonic Sort](sorting_algorithms/bitonicSort.py)
 - [Bogo Sort](sorting_algorithms/bogoSort.py)
 - [Bubble Sort](sorting_algorithms/bubbleSort.py)
 - [BucketSort](sorting_algorithms/bucketSort.py)
