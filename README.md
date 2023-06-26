@@ -4,6 +4,7 @@
 - [Data Structures](data_structures)
 
 # Sorting Algorithms Added:
+- [Binary Insertion Sort](sorting_algorithms/binaryInsertionSort.py)
 - [Bogo Sort](sorting_algorithms/bogoSort.py)
 - [Bubble Sort](sorting_algorithms/bubbleSort.py)
 - [BucketSort](sorting_algorithms/bucketSort.py)
