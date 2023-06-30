@@ -117,3 +117,12 @@ def greatestPowerOfTwoLessThan(n):
         k = k << 1
     return k >> 1
 
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    bitonicSort(array, array[0], array[-1])
+    print(f"The sorted array: {array}")
