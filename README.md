@@ -15,5 +15,6 @@
 - [Heap Sort](sorting_algorithms/heapSort.py)
 - [Insertion Sort](sorting_algorithms/insertionSort.py)
 - [Merge Sort](sorting_algorithms/mergeSort.py)
+- [Pancake Sort](sorting_algorithms/pancakeSort.py)
 - [Quick Sort](sorting_algorithms/quickSort.py)
 
