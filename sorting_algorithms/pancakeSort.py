@@ -37,3 +37,13 @@ def flip(array, n):
         if i >= n - i:
             break
         array[n - i], array[i] = array[i], array[n - i]
+
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    pancakeSort(array, array[0], array[-1])
+    print(f"The sorted array: {array}")
