@@ -17,4 +17,4 @@
 - [Merge Sort](sorting_algorithms/mergeSort.py)
 - [Pancake Sort](sorting_algorithms/pancakeSort.py)
 - [Quick Sort](sorting_algorithms/quickSort.py)
-
+- [Shell Sort](sorting_algorithms/shellSort.py)
