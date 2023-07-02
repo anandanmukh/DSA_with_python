@@ -18,3 +18,4 @@
 - [Pancake Sort](sorting_algorithms/pancakeSort.py)
 - [Quick Sort](sorting_algorithms/quickSort.py)
 - [Shell Sort](sorting_algorithms/shellSort.py)
+- [Tim Sort](sorting_algorithms/timSort.py)
