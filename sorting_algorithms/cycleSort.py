@@ -54,4 +54,4 @@ if __name__ == "__main__":
 
     for i in cycleSort(array, 0, len(array)-1):
         continue
-    print(f"The sorted array: {array}")
+    print(f"The sorted array: {array} ")
