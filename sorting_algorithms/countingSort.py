@@ -30,3 +30,14 @@ def countingSort(array, *args):
         yield array, C[A[size-i-1]]-1, -1, size-i-1, -1
         array[C[A[size-i-1]]-1] = A[size-i-1]
         C[A[size-i-1]] -= 1
+
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    for i in countingSort(array, 0, len(array)-1):
+        continue
+    print(f"The sorted array: {array} ")
