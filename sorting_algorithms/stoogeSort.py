@@ -44,3 +44,15 @@ def stoogeSort(arr, l, h):
         yield from stoogeSort(arr, l, (h-t))
         yield from stoogeSort(arr, l + t, (h))
         yield from stoogeSort(arr, l, (h-t))
+
+
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    for i in stoogeSort(array, 0, len(array)-1):
+        continue
+    print(f"The sorted array: {array} ")
