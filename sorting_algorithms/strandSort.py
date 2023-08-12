@@ -105,3 +105,15 @@ def strandSort(arr,*args):
     size = len(arr)
     
     yield from helper(arr,size,0)
+
+
+if __name__ == "__main__":
+    import random
+    array = [random.randint(0, 100) for i in range(10)]
+
+    # print the array before and after sorting
+    print(f'The unsorted array: {array}')
+
+    for i in strandSort(array, 0, len(array)-1):
+        continue
+    print(f"The sorted array: {array} ")
