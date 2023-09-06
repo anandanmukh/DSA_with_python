@@ -25,3 +25,14 @@ Algorithms that manipulate information
 - Use names to remember intermediate values (m,n,fm,fn,i,j,f)
 - Values can be single items or collections
 - Assign values to names
+
+## Can we do better?
+- why compare two lists and then compare them to compute the gcd?
+- For each i in 1 to max(m,n), if i divides m and i also divides n, then add i to cf
+- Actually any common factor must be less than min(m,n)
+- For each i in 1 to min(m,n), if i divides m and i also divides n, then add i to cf
+- The [short python programme](02_gcd.py) is for the enhanced gcd
+
+## An implementation of gcd with [no lists](03_gcd.py)
+
+## An implementation of gcd with no lists and by [scanning backwards](04_gcd.py) 
