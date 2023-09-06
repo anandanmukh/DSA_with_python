@@ -1,8 +1,10 @@
-# Algorithms, programming
-* Algorithms: how to systematically perform a task
-* Write down as a sequence of steps ("Recipe" or program)
-* Programming language describes the steps
-* What is a step? Degrees of detail
+# Week 1 Notes
+
+## Algorithms, programming
+- Algorithms: how to systematically perform a task
+- Write down as a sequence of steps ("Recipe" or program)
+- Programming language describes the steps
+- What is a step? Degrees of detail
 - "Arrage the chairs" vs "Make 8 rows with 10 chairs in each row".
 - Program is a sequence of steps
 - Some steps are repeated
@@ -36,3 +38,20 @@ Algorithms that manipulate information
 ## An implementation of gcd with [no lists](03_gcd.py)
 
 ## An implementation of gcd with no lists and by [scanning backwards](04_gcd.py) 
+
+## The different implementations of gcd with euclid's algorithm are [here](05_euclids_gcd.py) and [here](06_euclids_2.py) and [here](07_euclids_3.py)
+
+## Interpreters vs Compilers
+- Programming languages are "high level" for humans to understand
+- Computers need "lower level" instructions
+- Compiler: Translates high level programming language to machine level instructions, generates "executable" code
+- Interpreter: Itself a program that runs and directly "understands" high level programming language
+
+## Python Interpreter
+- Python is basically an interpreted language
+- Load the python interpreter
+- Send Python commands to the interpreter to be executed
+- Easy to interactively explore language features
+- Can load complex programs from files
+- eg. from filename import *
+
