@@ -19,6 +19,32 @@
 - for a float, this sequence breaks up into a mantissa and exponent
 - Like 6.022 * 10**24
 
-##
+## Operations on Numbers 
+- Normal arithmetic operations: +, -, *, /
+- / always produces a float
+- Quotient is // and remainder is %
+- Exponentiation is **
+- the "math" library is required for log(), sqrt(), sin()...
 
+## Names, values and types
+- Values have types
+- Type determines what operations are legal
+- Names inherit their type from their current value Type of a name is not fixed
+- Unlike languages like C, C++, Java where each name is “declared” in advance with its type
 
+## Names, values and types
+- Names can be assigned values of different types as the program evolves
+eg. 
+i=5 #i is int
+i=7*1 #i is still int
+j = i/3 # j is float, / creates float ...
+i=2*j #i is now float
+- type(e) returns type of expression e
+- Not a good style to assign values of mixed types to same name!
+
+## Boolean values: bool
+- True, False
+- Logical operators: not, and, or
+- not True is False, not False is True
+- x and y is True if both of x,y are True
+- x or y is True if at least one of x,y is True
