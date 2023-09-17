@@ -32,7 +32,7 @@
 - Names inherit their type from their current value Type of a name is not fixed
 - Unlike languages like C, C++, Java where each name is “declared” in advance with its type
 
-## Names, values and types
+## Names, Values and Types
 - Names can be assigned values of different types as the program evolves
 eg. 
 i=5 #i is int
@@ -48,3 +48,12 @@ i=2*j #i is now float
 - not True is False, not False is True
 - x and y is True if both of x,y are True
 - x or y is True if at least one of x,y is True
+
+## Comparisons
+- x == y, a != b, 
+- z < 17*5, n > m, 
+- i <= j+k, 19 >= 44*d
+- Combine using logical operators
+- n > 0 and m%n == 0
+- Assign a boolean expression to a name
+- divisor = (m%n == 0)
