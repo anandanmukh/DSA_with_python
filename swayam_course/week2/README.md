@@ -78,25 +78,26 @@ i=2*j #i is now float
 - A single character is a string of length 1 
 - No separate type char 
 - Enclose in quotes—single, double, even triple! 
- -  city = 'Chennai'  
- -  title = "Hitchhiker's Guide to the Galaxy" 
+-  city = 'Chennai'  
+-  title = "Hitchhiker's Guide to the Galaxy" 
 -   dialogue = '''He said his favourite book is 
 "Hitchhiker's Guide to the Galaxy”'''
 
 ## Strings as sequences
 - String: sequence or list of characters 
 - Positions 0,1,2,...,n-1 for a string of length n 
-- s = "hello"
+> s = "hello"
 - Positions -1,-2,... count backwards from end 
-- s[1] == "e", s[-2] = "l"
+> s[1] == "e", s[-2] = "l"
 -  h e l l o
 -  0 1 2 3 4
 - -5 -4 -3 -2 -1
 
 ## Operations on strings
 - Combine two strings: concatenation, operator +
-- s = "hello" 
-- t = s + ", there" 
+> s = "hello" 
+>
+> t = s + ", there" 
 - t is now "hello, there" 
 - len(s) returns length of s 
 - The strings operations are done [here](02_strings.ipynb)
@@ -115,7 +116,82 @@ i=2*j #i is now float
 - s[3] = "p" — error! 
 - Instead, use slices and concatenation 
 - s = s[0:3] + "p!" 
-- Strings are immutable values (more later)
+
+## Lists
+- Sequences of values 
+- Type need not be uniform 
+- Extract values by position, slice, like str
+- Length is given by len()
+- The lists operations can be found [here](03_lists.ipynb)
+
+## Lists and strings
+- For str, both a single position and a slice return 
+strings 
+>h = "hello"
+>
+> h[0] == h[0:1] == "h"
+- For lists, a single position returns a value, a slice 
+returns a list 
+> factors = [1,2,5,10]
+>
+> factors[0] == 1, factors[0:1] == [1]
+
+## Nested lists
+- Lists can contain other lists 
+
+>nested = [[2,[37]],4,["hello"]]
+>
+>nested[0] is [2,[37]]
+>
+>nested[1] is 4
+>
+>nested[2][0][3] is "l"
+>
+>nested[0][1:2] is [[37]]
+
+## Updating lists
+- Unlike strings, lists can be updated in place 
+> nested = [[2,[37]],4,["hello"]]
+>
+> nested[1] = 7
+>
+> nested is now [[2,[37]],7,["hello"]]
+>
+> nested[0][1][0] = 19
+>
+> nested is now [[2,[19]],7,["hello"]]
+- Lists are mutable, unlike strings
+
+## Mutable vs immutable
+- What happens when we assign names? 
+
+> x = 5 
+>
+> y = x 
+>
+> x = 7
+- Has the value of y changed? 
+- No, why should it? 
+- Does assignment copy the value or make both 
+names point to the same value?
+- Does assignment copy the value or make both 
+names point to the same value? 
+- For immutable values, we can assume that 
+assignment makes a fresh copy of a value 
+- Values of type int, float, bool, str are 
+immutable 
+- Updating one value does not affect the copy
+- For mutable values, assignment does not make a 
+fresh copy 
+
+> list1 = [1,3,5,7] 
+>
+> list2 = list1 
+>
+> list1[2] = 4
+What is list2[2] now? 
+list2[2] is also 4 
+list1 and list2 are two names for the same list
 
 
 
